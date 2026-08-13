@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eee9ff;
+
+    color: #222;
+}
+
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: auto auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #101223;
+}
+
+header img {
+    width: 100%;
+
+    display: block;
+}
+
+
+nav {
+    background-color: #8174d9;
+
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-right: 25px;
+
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffd1ef;
+}
+
+
+.content {
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    background-color: #eee9ff;
+}
+
+
+main {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+}
+
+
+.box {
+    background-color: #d9c8f4;
+
+    padding: 10px;
+
+    border: 1px solid #b99bdc;
+
+    border-radius: 4px;
+}
+
+
+.box h2 {
+    margin-top: 0;
+
+    color: #382568;
+}
+
+
+.box img {
+    max-width: 100%;
+
+    display: block;
+}
+
+
+.product-box img {
+    width: 290px;
+
+    height: 290px;
+
+    object-fit: cover;
+}
+
+
+.price {
+    color: #7028a8;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+aside {
+    background-color: #c7a9ed;
+
+    padding: 10px;
+
+    border: 1px solid #a982d2;
+
+    border-radius: 4px;
+}
+
+
+aside h3 {
+    color: #382568;
+
+    margin-top: 0;
+}
+
+
+form {
+    font-size: 14px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    border: 1px solid #ad91c8;
+
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+
+select {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    border: 1px solid #ad91c8;
+
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 9px;
+
+    background-color: #4723a8;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background-color: #7028a8;
+}
+
+
+.small-text {
+
+    font-size: 12px;
+
+    color: #493b66;
+}
+
+
+footer {
+
+    background-color: #101223;
+}
+
+
+footer img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+@media (max-width: 700px) {
+
+    .content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .product-box img {
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+}
